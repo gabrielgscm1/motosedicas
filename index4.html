@@ -32,19 +32,67 @@
     <main>
         <section class="conteudo">
             <h1>Manuais</h1>
-            <nav>
-                <ul class="ul-manuais">
-                    <li class="li-manuais"><a class="a-manuais" href="https://1drv.ms/b/s!Au6rpBhz5nOH0RC9PPnvyPPmeqEs?e=lYFtRx" target="_blank" rel="noopener noreferrer">CBX 250 Twister</a></li>
-                    <li class="li-manuais"><a class="a-manuais" href="https://1drv.ms/b/s!Au6rpBhz5nOH0Q4Aoo7OUDaeuKS7?e=1grvFS" target="_blank" rel="noopener noreferrer">CBR 250R</a></li>
-                    <li class="li-manuais"><a class="a-manuais" href="https://1drv.ms/b/s!Au6rpBhz5nOH0Q9EkTlz-sEDL1AR?e=f0zZkD" target="_blank" rel="noopener noreferrer">Shadow 750</a></li>
-                </ul>
-            </nav>
+            <p class="section-subtitle">Baixe os manuais das suas motos favoritas.</p>
+            <div class="manuais-grid">
+                <div class="manual-card fade-in">
+                    <span class="manual-icon">📄</span>
+                    <h2>CBX 250 Twister</h2>
+                    <p>Manual completo do proprietário</p>
+                    <a class="btn-manual" href="https://1drv.ms/b/s!Au6rpBhz5nOH0RC9PPnvyPPmeqEs?e=lYFtRx" target="_blank" rel="noopener noreferrer">Download</a>
+                </div>
+                <div class="manual-card fade-in">
+                    <span class="manual-icon">📄</span>
+                    <h2>CBR 250R</h2>
+                    <p>Manual completo do proprietário</p>
+                    <a class="btn-manual" href="https://1drv.ms/b/s!Au6rpBhz5nOH0Q4Aoo7OUDaeuKS7?e=1grvFS" target="_blank" rel="noopener noreferrer">Download</a>
+                </div>
+                <div class="manual-card fade-in">
+                    <span class="manual-icon">📄</span>
+                    <h2>Shadow 750</h2>
+                    <p>Manual completo do proprietário</p>
+                    <a class="btn-manual" href="https://1drv.ms/b/s!Au6rpBhz5nOH0Q9EkTlz-sEDL1AR?e=f0zZkD" target="_blank" rel="noopener noreferrer">Download</a>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>Motos e Dicas &copy; 2025 - Todos os direitos reservados.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Navegação</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="index4.html">Manuais</a></li>
+                    <li><a href="index2.html">Dicas</a></li>
+                    <li><a href="index3.html">Motos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Sobre</h3>
+                <ul class="footer-links">
+                    <li>Portal dedicado a motociclistas</li>
+                    <li>Dicas, manuais e conteúdo</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Motos e Dicas &copy; 2025 - Todos os direitos reservados.</p>
+        </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elements = document.querySelectorAll('.fade-in');
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            elements.forEach(function (el) { observer.observe(el); });
+        });
+    </script>
 </body>
 
 </html>

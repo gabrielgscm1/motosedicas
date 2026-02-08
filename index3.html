@@ -31,22 +31,62 @@
 
     <main>
         <section class="conteudo">
-            <h1>Rodolfinho da Z testando a nova CBR 1000 RR-R 2023</h1>
-            <div class="video">
-                <div class="video-area">
-                    <iframe src="https://www.youtube.com/embed/--5baa8_vOM"
-                        title="Rodolfinho da Z testando a nova CBR 1000 RR-R 2023"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
-                    </iframe>
+            <h1>Motos</h1>
+            <p class="section-subtitle">Confira vídeos e conteúdo sobre o mundo das motos.</p>
+            <div class="videos-grid">
+                <div class="video-card fade-in">
+                    <div class="video-area">
+                        <iframe src="https://www.youtube.com/embed/--5baa8_vOM"
+                            title="Rodolfinho da Z testando a nova CBR 1000 RR-R 2023"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <h2>Rodolfinho da Z testando a nova CBR 1000 RR-R 2023</h2>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>Motos e Dicas &copy; 2025 - Todos os direitos reservados.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Navegação</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="index4.html">Manuais</a></li>
+                    <li><a href="index2.html">Dicas</a></li>
+                    <li><a href="index3.html">Motos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Sobre</h3>
+                <ul class="footer-links">
+                    <li>Portal dedicado a motociclistas</li>
+                    <li>Dicas, manuais e conteúdo</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Motos e Dicas &copy; 2025 - Todos os direitos reservados.</p>
+        </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elements = document.querySelectorAll('.fade-in');
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            elements.forEach(function (el) { observer.observe(el); });
+        });
+    </script>
 </body>
 
 </html>

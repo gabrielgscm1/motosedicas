@@ -32,28 +32,35 @@
     <main>
         <section class="conteudo">
             <h1>Dicas</h1>
+            <p class="section-subtitle">Cuide bem da sua moto e pilote com segurança.</p>
             <div class="dicas-grid">
-                <div class="dica-card">
+                <div class="dica-card fade-in">
+                    <span class="dica-icon">🛢️</span>
                     <h2>Troca de óleo</h2>
                     <p>Troque o óleo do motor a cada 3.000 km ou conforme recomendação do fabricante. Usar o óleo correto aumenta a vida útil do motor.</p>
                 </div>
-                <div class="dica-card">
+                <div class="dica-card fade-in">
+                    <span class="dica-icon">🔧</span>
                     <h2>Calibragem dos pneus</h2>
                     <p>Verifique a calibragem dos pneus semanalmente. Pneus com pressão incorreta afetam a estabilidade e aumentam o consumo de combustível.</p>
                 </div>
-                <div class="dica-card">
+                <div class="dica-card fade-in">
+                    <span class="dica-icon">⛓️</span>
                     <h2>Corrente de transmissão</h2>
                     <p>Lubrifique a corrente a cada 500 km e verifique a folga regularmente. Uma corrente bem cuidada evita desgaste prematuro do kit relação.</p>
                 </div>
-                <div class="dica-card">
+                <div class="dica-card fade-in">
+                    <span class="dica-icon">🛑</span>
                     <h2>Freios</h2>
                     <p>Verifique as pastilhas de freio periodicamente. Pastilhas gastas comprometem a frenagem e colocam sua segurança em risco.</p>
                 </div>
-                <div class="dica-card">
+                <div class="dica-card fade-in">
+                    <span class="dica-icon">🔋</span>
                     <h2>Bateria</h2>
                     <p>Mantenha os terminais da bateria limpos e sem oxidação. Se a moto ficar parada por muito tempo, considere usar um carregador de manutenção.</p>
                 </div>
-                <div class="dica-card">
+                <div class="dica-card fade-in">
+                    <span class="dica-icon">🏍️</span>
                     <h2>Pilotagem segura</h2>
                     <p>Use sempre capacete, luvas e botas. Respeite os limites de velocidade e mantenha distância segura dos outros veículos.</p>
                 </div>
@@ -62,8 +69,42 @@
     </main>
 
     <footer>
-        <p>Motos e Dicas &copy; 2025 - Todos os direitos reservados.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Navegação</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="index4.html">Manuais</a></li>
+                    <li><a href="index2.html">Dicas</a></li>
+                    <li><a href="index3.html">Motos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Sobre</h3>
+                <ul class="footer-links">
+                    <li>Portal dedicado a motociclistas</li>
+                    <li>Dicas, manuais e conteúdo</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Motos e Dicas &copy; 2025 - Todos os direitos reservados.</p>
+        </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elements = document.querySelectorAll('.fade-in');
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            elements.forEach(function (el) { observer.observe(el); });
+        });
+    </script>
 </body>
 
 </html>
