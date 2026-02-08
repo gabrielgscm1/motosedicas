@@ -1,91 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,
-    initial-scale=1.0, user-scalable=no">
-    <title>dicas</title>
-    <style>
-        * {
-            font-family: Arial;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            display: flex;
-            justify-content: center;
-            height: 120px;
-        }
-
-        .container {
-            width: 990px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        img {
-            width: 150px;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-
-        .menu {
-            display: flex;
-            align-items: center;
-        }
-
-        nav ul,
-        nav li {
-            margin: 0;
-            padding: 0;
-        }
-
-
-        li {
-            list-style: none;
-
-        }
-
-        ul {
-            display: flex;
-        }
-
-        a {
-            display: block;
-            text-decoration: none;
-            color: black;
-            text-transform: uppercase;
-            padding: 15px;
-        }
-
-        nav .active a,
-        nav a:hover {
-            background-color: #909090;
-            color: #ffffff;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dicas essenciais para manutenção e cuidados com sua motocicleta.">
+    <title>Motos e Dicas | Dicas</title>
+    <link rel="icon" href="imagens/motosedicas2.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
 </head>
-<!--######################################-->
+
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <a href=""><img src="imagens/motosedicas2.png" alt=""></a>
+                <a href="index.html"><img src="imagens/motosedicas2.png" alt="Logo Motos e Dicas"></a>
             </div>
             <div class="menu">
                 <nav>
                     <ul>
-                        <li class="active"><a href="index.html">Início</a></li>
+                        <li><a href="index.html">Início</a></li>
                         <li><a href="index4.html">Manuais</a></li>
-                        <li><a href="index2.html">Dicas</a></li>
+                        <li class="active"><a href="index2.html">Dicas</a></li>
                         <li><a href="index3.html">Motos</a></li>
                     </ul>
                 </nav>
@@ -93,40 +29,41 @@
         </div>
     </header>
 
-    <section id="conteudo">
-        <h1>Página em manutenção</h1>
-    </section>
+    <main>
+        <section class="conteudo">
+            <h1>Dicas</h1>
+            <div class="dicas-grid">
+                <div class="dica-card">
+                    <h2>Troca de óleo</h2>
+                    <p>Troque o óleo do motor a cada 3.000 km ou conforme recomendação do fabricante. Usar o óleo correto aumenta a vida útil do motor.</p>
+                </div>
+                <div class="dica-card">
+                    <h2>Calibragem dos pneus</h2>
+                    <p>Verifique a calibragem dos pneus semanalmente. Pneus com pressão incorreta afetam a estabilidade e aumentam o consumo de combustível.</p>
+                </div>
+                <div class="dica-card">
+                    <h2>Corrente de transmissão</h2>
+                    <p>Lubrifique a corrente a cada 500 km e verifique a folga regularmente. Uma corrente bem cuidada evita desgaste prematuro do kit relação.</p>
+                </div>
+                <div class="dica-card">
+                    <h2>Freios</h2>
+                    <p>Verifique as pastilhas de freio periodicamente. Pastilhas gastas comprometem a frenagem e colocam sua segurança em risco.</p>
+                </div>
+                <div class="dica-card">
+                    <h2>Bateria</h2>
+                    <p>Mantenha os terminais da bateria limpos e sem oxidação. Se a moto ficar parada por muito tempo, considere usar um carregador de manutenção.</p>
+                </div>
+                <div class="dica-card">
+                    <h2>Pilotagem segura</h2>
+                    <p>Use sempre capacete, luvas e botas. Respeite os limites de velocidade e mantenha distância segura dos outros veículos.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <footer>
+        <p>Motos e Dicas &copy; 2025 - Todos os direitos reservados.</p>
+    </footer>
 </body>
 
 </html>

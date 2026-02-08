@@ -1,196 +1,52 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,
-    initial-scale=1.0, user-scalable=no">
-    <title>motos</title>
-    <style>
-        * {
-            font-family: Arial;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            display: flex;
-            justify-content: center;
-            height: 120px;
-        }
-
-        .container {
-            width: 990px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        img {
-            width: 150px;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-
-        .menu {
-            display: flex;
-            align-items: center;
-        }
-
-        nav ul,
-        nav li {
-            margin: 0;
-            padding: 0;
-        }
-
-
-        li {
-            list-style: none;
-
-        }
-
-
-        ul {
-            display: flex;
-        }
-
-        a {
-            display: block;
-            text-decoration: none;
-            color: black;
-            text-transform: uppercase;
-            padding: 15px;
-        }
-
-        nav .active a,
-        nav a:hover {
-            background-color: #909090;
-            color: #ffffff;
-        }
-
-        /* css referente ao conteudo da pagina index3*/
-
-        .video {
-            width: 100%;
-            max-width: 700px;
-        }
-
-        .video-area {
-            position: relative;
-            height: 0px;
-            padding: 0px 0px 56.25%;
-        }
-
-        .video-area iframe {
-            position: absolute;
-            top: 0px;
-            bottom: 0px;
-            left: 0px;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vídeos e conteúdo sobre motos esportivas, naked e custom.">
+    <title>Motos e Dicas | Motos</title>
+    <link rel="icon" href="imagens/motosedicas2.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
 </head>
-<!--############################-->
-<body>
 
+<body>
     <header>
         <div class="container">
             <div class="logo">
-                <a href=""><img src="imagens/motosedicas2.png" alt=""></a>
+                <a href="index.html"><img src="imagens/motosedicas2.png" alt="Logo Motos e Dicas"></a>
             </div>
             <div class="menu">
                 <nav>
                     <ul>
-                        <li class="active"><a href="index.html">Início</a></li>
+                        <li><a href="index.html">Início</a></li>
                         <li><a href="index4.html">Manuais</a></li>
                         <li><a href="index2.html">Dicas</a></li>
-                        <li><a href="index3.html">Motos</a></li>
+                        <li class="active"><a href="index3.html">Motos</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
 
-    <section id="conteudo">
-        <h1>Rodolfinho da Z testando a nova Cbr 1000 RR-R 2023</h1>
-
-        <div class="video">
-            <div class="video-area">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/--5baa8_vOM"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
+    <main>
+        <section class="conteudo">
+            <h1>Rodolfinho da Z testando a nova CBR 1000 RR-R 2023</h1>
+            <div class="video">
+                <div class="video-area">
+                    <iframe src="https://www.youtube.com/embed/--5baa8_vOM"
+                        title="Rodolfinho da Z testando a nova CBR 1000 RR-R 2023"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <footer>
+        <p>Motos e Dicas &copy; 2025 - Todos os direitos reservados.</p>
+    </footer>
 </body>
 
 </html>

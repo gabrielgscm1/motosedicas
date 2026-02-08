@@ -1,0 +1,224 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== HEADER ===== */
+header {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.container {
+    width: 990px;
+    max-width: 100%;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+nav ul,
+nav li {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+nav .active a,
+nav a:hover {
+    background-color: #909090;
+    color: #ffffff;
+}
+
+/* ===== BANNER (index.html) ===== */
+#banner {
+    background-image: url('imagens/esportivas.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 623px;
+}
+
+/* ===== CONTEUDO ===== */
+.conteudo {
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+
+.conteudo h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* ===== VIDEO (index3.html) ===== */
+.video {
+    width: 100%;
+    max-width: 700px;
+}
+
+.video-area {
+    position: relative;
+    height: 0;
+    padding: 0 0 56.25%;
+}
+
+.video-area iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ===== MANUAIS (index4.html) ===== */
+.ul-manuais {
+    display: flex;
+    flex-direction: column;
+}
+
+.li-manuais {
+    list-style: disc;
+}
+
+.a-manuais {
+    padding: 10px;
+    display: inline-block;
+}
+
+/* ===== DICAS (index2.html) ===== */
+.dicas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.dica-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.dica-card h2 {
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.dica-card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 15px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #ccc;
+    text-transform: none;
+    display: inline;
+    padding: 0;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    a {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    #banner {
+        height: 300px;
+    }
+
+    .conteudo h1 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 120px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    a {
+        padding: 8px 10px;
+        font-size: 0.8rem;
+    }
+
+    #banner {
+        height: 200px;
+    }
+}

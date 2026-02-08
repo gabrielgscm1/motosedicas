@@ -1,111 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,
-    initial-scale=1.0, user-scalable=no">
-    <title>manuais</title>
-    <style>
-        * {
-            font-family: Arial;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            display: flex;
-            justify-content: center;
-            height: 120px;
-        }
-
-        .container {
-            width: 990px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        img {
-            width: 150px;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-
-        .menu {
-            display: flex;
-            align-items: center;
-        }
-
-        nav ul,
-        nav li {
-            margin: 0;
-            padding: 0;
-        }
-
-
-        li {
-            list-style: none;
-        }
-
-        ul {
-            display: flex;
-        }
-
-        a {
-            display: block;
-            text-decoration: none;
-            color: black;
-            text-transform: uppercase;
-            padding: 15px;
-        }
-
-        nav .active a,
-        nav a:hover {
-            background-color: #909090;
-            color: #ffffff;
-        }
-
-        /* css referente ao conteudo da pagina index4 */
-
-        .conteudo h1{
-            width: 150px;
-        }
-
-        .ul-manuais {
-            display: flex;
-            flex-direction: column;
-
-        }
-
-        .a-manuais {
-            padding: 10px;
-            display: inline-block;
-            width: 150px;
-        }
-
-        .li-manuais {
-            list-style: disc;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manuais de motocicletas Honda para download gratuito.">
+    <title>Motos e Dicas | Manuais</title>
+    <link rel="icon" href="imagens/motosedicas2.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
 </head>
-<!--######################################-->
+
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <a href=""><img src="imagens/motosedicas2.png" alt=""></a>
+                <a href="index.html"><img src="imagens/motosedicas2.png" alt="Logo Motos e Dicas"></a>
             </div>
             <div class="menu">
                 <nav>
                     <ul>
-                        <li class="active"><a href="index.html">Início</a></li>
-                        <li><a href="index4.html">Manuais</a></li>
+                        <li><a href="index.html">Início</a></li>
+                        <li class="active"><a href="index4.html">Manuais</a></li>
                         <li><a href="index2.html">Dicas</a></li>
                         <li><a href="index3.html">Motos</a></li>
                     </ul>
@@ -114,90 +29,22 @@
         </div>
     </header>
 
-    <section class="conteudo">
-        <h1>Manuais</h1>
-        <nav>
-            <ul class="ul-manuais">
-                <li class="li-manuais"><a class="a-manuais" href="https://1drv.ms/b/s!Au6rpBhz5nOH0RC9PPnvyPPmeqEs?e=lYFtRx" target="_blank">Cbx 250 Twister</a></li>
-                <li class="li-manuais"><a class="a-manuais" href="https://1drv.ms/b/s!Au6rpBhz5nOH0Q4Aoo7OUDaeuKS7?e=1grvFS" target="_blank">Cbr 250r</a></li>
-                <li class="li-manuais"><a class="a-manuais" href="https://1drv.ms/b/s!Au6rpBhz5nOH0Q9EkTlz-sEDL1AR?e=f0zZkD" target="_blank">Shadow 750</a></li>
-            </ul>
-        </nav>
-    </section>
+    <main>
+        <section class="conteudo">
+            <h1>Manuais</h1>
+            <nav>
+                <ul class="ul-manuais">
+                    <li class="li-manuais"><a class="a-manuais" href="https://1drv.ms/b/s!Au6rpBhz5nOH0RC9PPnvyPPmeqEs?e=lYFtRx" target="_blank" rel="noopener noreferrer">CBX 250 Twister</a></li>
+                    <li class="li-manuais"><a class="a-manuais" href="https://1drv.ms/b/s!Au6rpBhz5nOH0Q4Aoo7OUDaeuKS7?e=1grvFS" target="_blank" rel="noopener noreferrer">CBR 250R</a></li>
+                    <li class="li-manuais"><a class="a-manuais" href="https://1drv.ms/b/s!Au6rpBhz5nOH0Q9EkTlz-sEDL1AR?e=f0zZkD" target="_blank" rel="noopener noreferrer">Shadow 750</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--
-    <div>
-        <h1> Manuais</h1>
-        <p>Esse site é para você que adora motocicletas e curte saber aquelas dicas sensacionais.</p>
-
-        <ul>
-            <li><a href="https://1drv.ms/b/s!Au6rpBhz5nOH0Q4Aoo7OUDaeuKS7?e=1grvFS">Cbr 250r</a></li>
-            <li><a href="https://1drv.ms/b/s!Au6rpBhz5nOH0QmD1_Uba7oPBjJP?e=YdxdIw">Biz 110i</a></li>
-            <li><a href="https://1drv.ms/b/s!Au6rpBhz5nOH0Q9EkTlz-sEDL1AR?e=f0zZkD">Shadow 750</a></li>
-            <li><a href="https://www.honda.com.br/pos-venda/motos/manual-e-guia">Outros manuais</a></li>
-        </ul>
-    </div>
-
-    <div class="container">
-        <div class="container-botao">
-            <a href="index.html" class="botao">Página Inicial</a>
-        </div>
-    </div>
--->
-
+    <footer>
+        <p>Motos e Dicas &copy; 2025 - Todos os direitos reservados.</p>
+    </footer>
 </body>
 
 </html>
