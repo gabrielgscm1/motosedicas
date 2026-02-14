@@ -199,7 +199,7 @@ nav .active a {
     margin-top: 10px;
 }
 
-/* ===== DICAS (index2.html) ===== */
+/* ===== DICAS (dicas.html) ===== */
 .dicas-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
@@ -239,7 +239,7 @@ nav .active a {
     line-height: 1.7;
 }
 
-/* ===== VIDEO (index3.html) ===== */
+/* ===== VIDEO (videos.html) ===== */
 .videos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
@@ -284,7 +284,7 @@ nav .active a {
     color: #1a1a1a;
 }
 
-/* ===== MANUAIS (index4.html) ===== */
+/* ===== MANUAIS (manuais.html) ===== */
 .manuais-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -356,59 +356,6 @@ footer {
     font-size: 0.85rem;
 }
 
-.footer-content {
-    max-width: 990px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.footer-section h3 {
-    color: #fff;
-    font-size: 1rem;
-    margin-bottom: 15px;
-    position: relative;
-}
-
-.footer-section h3::after {
-    content: '';
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: #B71C1C;
-    margin-top: 8px;
-    border-radius: 2px;
-}
-
-.footer-links {
-    list-style: none;
-}
-
-.footer-links li {
-    margin-bottom: 8px;
-}
-
-.footer-links a {
-    color: #aaa;
-    font-size: 0.9rem;
-    transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: #B71C1C;
-}
-
-.footer-bottom {
-    max-width: 990px;
-    margin: 30px auto 0;
-    padding-top: 20px;
-    border-top: 1px solid #333;
-    text-align: center;
-    font-size: 0.85rem;
-}
 
 /* ===== ANIMAÇÕES ===== */
 @keyframes fadeInUp {
@@ -480,14 +427,6 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-section h3::after {
-        margin: 8px auto 0;
-    }
 }
 
 @media (max-width: 480px) {

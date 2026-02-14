@@ -20,9 +20,9 @@
                 <nav>
                     <ul>
                         <li><a href="index.html">Início</a></li>
-                        <li class="active"><a href="index4.html">Manuais</a></li>
-                        <li><a href="index2.html">Dicas</a></li>
-                        <li><a href="index3.html">Motos</a></li>
+                        <li class="active"><a href="manuais.html">Manuais</a></li>
+                        <li><a href="dicas.html">Dicas</a></li>
+                        <li><a href="videos.html">Motos</a></li>
                     </ul>
                 </nav>
             </div>
@@ -60,19 +60,7 @@
         <p>Motos e Dicas &copy; 2025 - Todos os direitos reservados.</p>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var elements = document.querySelectorAll('.fade-in');
-            var observer = new IntersectionObserver(function (entries) {
-                entries.forEach(function (entry) {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                    }
-                });
-            }, { threshold: 0.1 });
-            elements.forEach(function (el) { observer.observe(el); });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
